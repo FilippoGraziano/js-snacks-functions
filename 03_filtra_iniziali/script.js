@@ -8,9 +8,7 @@ function _wordsWithSameFirstLetter(array, letter) {
     const upperCaseLetter = letter.toUpperCase()
     let wordsSameFirstLetter = []
     for (i = 0; i < array.length; i++) {
-        let wordsLetters = array[i].split(``)
-        if (upperCaseLetter === wordsLetters[0])
-            wordsSameFirstLetter.push(array[i])
+        if (upperCaseLetter === array[i][0]) wordsSameFirstLetter.push(array[i]);
     };
     return console.log(wordsSameFirstLetter);
 }
@@ -19,9 +17,7 @@ const wordsWithSameFirstLetter = (array, letter) => {
     const upperCaseLetter = letter.toUpperCase()
     let wordsSameFirstLetter = []
     for (i = 0; i < array.length; i++) {
-        let wordsLetters = array[i].split(``)
-        if (upperCaseLetter === wordsLetters[0])
-            wordsSameFirstLetter.push(array[i])
+        if (upperCaseLetter === array[i][0]) wordsSameFirstLetter.push(array[i]);
     };
     return console.log(wordsSameFirstLetter);
 }
