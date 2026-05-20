@@ -10,23 +10,21 @@ const name = 'Mario';
 
 // Dichiara la funzione qui.
 function _saluto(name) {
-    const now = new Date();
-    const hours = now.getHours();
+    const hours = new Date().getHours();
+    let message = `Buonasera`
 
-    if (hours <= 13) return console.log(`Buongiorno ${name}`);
-    if (hours > 13 && hours <= 17) return console.log(`Buonpomeriggio ${name}`);
-    if (hours > 17) return console.log(`Buonasera ${name}`);
-    return console.log(undefined);
+    if (hours <= 13) message = `Buongiorno`;
+    else if (hours <= 17) message = `Buonpomeriggio`;
+    return console.log(`${message} ${name}`);
 };
 
 const saluto = name => {
-    const now = new Date();
-    const hours = now.getHours();
+    const hours = new Date().getHours();
+    let message = `Buonasera`
 
-    if (hours <= 13) return console.log(`Buongiorno ${name}`);
-    if (hours > 13 && hours <= 17) return console.log(`Buonpomeriggio ${name}`);
-    if (hours > 17) return console.log(`Buonasera ${name}`);
-    return console.log(undefined);
+    if (hours <= 13) message = `Buongiorno`;
+    else if (hours <= 17) message = `Buonpomeriggio`;
+    return console.log(`${message} ${name}`);
 }
 // Invoca la funzione qui e stampa il risultato in console
 
