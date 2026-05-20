@@ -4,10 +4,27 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function _firstLetterOfArrayElement(array) {
+    let firstLetterArray = []
+    for (i = 0; i < array.length; i++) {
+        let letter = array[i].split(``)
+        firstLetterArray.push(letter[0])
+    };
+    return console.log(firstLetterArray);
+}
+
+const firstLetterOfArrayElement = array => {
+    let firstLetterArray = []
+    for (i = 0; i < array.length; i++) {
+        let letter = array[i].split(``)
+        firstLetterArray.push(letter[0])
+    };
+    return console.log(firstLetterArray);
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+firstLetterOfArrayElement(names)
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
