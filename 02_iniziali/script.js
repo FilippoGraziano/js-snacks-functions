@@ -7,8 +7,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 function _firstLetterOfArrayElement(array) {
     let firstLetterArray = []
     for (i = 0; i < array.length; i++) {
-        let letter = array[i]
-        firstLetterArray.push(letter[0])
+        firstLetterArray.push(array[i][0])
     };
     return console.log(firstLetterArray);
 }
@@ -16,8 +15,7 @@ function _firstLetterOfArrayElement(array) {
 const firstLetterOfArrayElement = array => {
     let firstLetterArray = []
     for (i = 0; i < array.length; i++) {
-        let letter = array[i]
-        firstLetterArray.push(letter[0])
+        firstLetterArray.push(array[i][0])
     };
     return console.log(firstLetterArray);
 }
