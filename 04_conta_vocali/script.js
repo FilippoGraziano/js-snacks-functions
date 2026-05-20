@@ -4,10 +4,30 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
+function _howManyVowels(word) {
+    let wordVowels = [];
+    for (i = 0; i < word.length; i++) {
+        if (word[i] === `a` || word[i] === `e` || word[i] === `i` || word[i] === `o` || word[i] === `u`) {
+            wordVowels.push(word[i]);
+        }
+    };
+    const finalString = wordVowels.join(`, `)
+    return console.log(wordVowels.length, `(${finalString})`);
+}
 
+const howManyVowels = word => {
+    let wordVowels = [];
+    for (i = 0; i < word.length; i++) {
+        if (word[i] === `a` || word[i] === `e` || word[i] === `i` || word[i] === `o` || word[i] === `u`) {
+            wordVowels.push(word[i]);
+        }
+    };
+    const finalString = wordVowels.join(`, `)
+    return console.log(wordVowels.length, `(${finalString})`);
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+howManyVowels(word)
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
