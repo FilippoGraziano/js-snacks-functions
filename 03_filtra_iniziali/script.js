@@ -4,10 +4,30 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function _wordsWithSameFirstLetter(array, letter) {
+    const upperCaseLetter = letter.toUpperCase()
+    let wordsSameFirstLetter = []
+    for (i = 0; i < array.length; i++) {
+        let wordsLetters = array[i].split(``)
+        if (upperCaseLetter === wordsLetters[0])
+            wordsSameFirstLetter.push(array[i])
+    };
+    return console.log(wordsSameFirstLetter);
+}
 
+const wordsWithSameFirstLetter = (array, letter) => {
+    const upperCaseLetter = letter.toUpperCase()
+    let wordsSameFirstLetter = []
+    for (i = 0; i < array.length; i++) {
+        let wordsLetters = array[i].split(``)
+        if (upperCaseLetter === wordsLetters[0])
+            wordsSameFirstLetter.push(array[i])
+    };
+    return console.log(wordsSameFirstLetter);
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+wordsWithSameFirstLetter(names, `a`)
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]

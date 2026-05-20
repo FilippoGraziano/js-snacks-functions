@@ -5,10 +5,10 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 
-// function saluto(name) {
-//     console.log(`Ciao ${name}`);
-//     return;
-// };
+function _saluto(name) {
+    console.log(`Ciao ${name}`);
+    return;
+};
 
 const saluto = name => console.log(`Ciao ${name}`)
 
