@@ -6,8 +6,9 @@ const word = 'javascript';
 // Dichiara la funzione qui.
 function _howManyVowels(word) {
     let wordVowels = [];
+    const vowels = `aeiouAEIOU`
     for (i = 0; i < word.length; i++) {
-        if (word[i] === `a` || word[i] === `e` || word[i] === `i` || word[i] === `o` || word[i] === `u`) {
+        if (vowels.includes(word[i])) {
             wordVowels.push(word[i]);
         }
     };
@@ -17,8 +18,9 @@ function _howManyVowels(word) {
 
 const howManyVowels = word => {
     let wordVowels = [];
+    const vowels = `aeiouAEIOU`
     for (i = 0; i < word.length; i++) {
-        if (word[i] === `a` || word[i] === `e` || word[i] === `i` || word[i] === `o` || word[i] === `u`) {
+        if (vowels.includes(word[i])) {
             wordVowels.push(word[i]);
         }
     };
